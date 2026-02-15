@@ -74,6 +74,12 @@ PROVIDERS = {
         "default_model": "gpt-5.2",
         "default_model_aux": "gpt-5.2-mini",
     },
+    "gemini": {
+        "env_key": "GEMINI_API_KEY",
+        "model_prefix": "gemini/",  # litellm expects gemini/ prefix for Google AI Studio
+        "default_model": "gemini/gemini-2.0-flash",
+        "default_model_aux": "gemini/gemini-2.0-flash",
+    },
 }
 
 DEFAULT_PROVIDER = "openrouter"
